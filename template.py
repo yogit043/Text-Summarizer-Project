@@ -7,6 +7,8 @@ logging.basicConfig(level = logging.INFO , format='[%(asctime)s] : %(message)s:'
 
 # .github/workflows/.gitkeep" - for cicd deployment we write our cicd yaml file here whenever we do commit it will automatically take code from github and it will do the deployment in our cloud
 #__inti__.py - folder as local package , to import some thing like from text summarizer import this thing like that
+# python3.9 -m venv testS
+# testS\Scripts\activate
 project_name = "TextSummarizer"
 list_of_files = [
     ".github/workflows/.gitkeep",
@@ -42,3 +44,4 @@ for filepath in list_of_files:
             logging.info(f"creating empty file {filepath}")
     else:
         logging.info(f"{filename} already exists")
+        
